@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24EC2914059B0007726B /* UITableView+Extension.swift */; };
 		3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E202913E81700F3D3FC /* AppDelegate.swift */; };
 		3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E222913E81700F3D3FC /* SceneDelegate.swift */; };
 		3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E242913E81700F3D3FC /* PokeListViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D5B24EC2914059B0007726B /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3DA73E1D2913E81700F3D3FC /* PokeChallenge01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeChallenge01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA73E202913E81700F3D3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA73E222913E81700F3D3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		3DA73E1F2913E81700F3D3FC /* PokeChallenge01 */ = {
 			isa = PBXGroup;
 			children = (
+				3DA73E5B2914053300F3D3FC /* Extension */,
 				3DA73E202913E81700F3D3FC /* AppDelegate.swift */,
 				3DA73E222913E81700F3D3FC /* SceneDelegate.swift */,
 				3DA73E512913FAC800F3D3FC /* View */,
@@ -147,6 +150,14 @@
 				3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3DA73E5B2914053300F3D3FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B24EC2914059B0007726B /* UITableView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 			files = (
 				3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */,
 				3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */,
+				3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */,
 				3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */,
 				3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */,
 			);
