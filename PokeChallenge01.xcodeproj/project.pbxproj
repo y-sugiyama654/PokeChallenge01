@@ -16,6 +16,8 @@
 		3DA73E382913E81700F3D3FC /* PokeChallenge01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E372913E81700F3D3FC /* PokeChallenge01Tests.swift */; };
 		3DA73E422913E81700F3D3FC /* PokeChallenge01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E412913E81700F3D3FC /* PokeChallenge01UITests.swift */; };
 		3DA73E442913E81800F3D3FC /* PokeChallenge01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E432913E81800F3D3FC /* PokeChallenge01UITestsLaunchTests.swift */; };
+		3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */; };
+		3DA73E552913FB1B00F3D3FC /* DummyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3DA73E3D2913E81700F3D3FC /* PokeChallenge01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeChallenge01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA73E412913E81700F3D3FC /* PokeChallenge01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeChallenge01UITests.swift; sourceTree = "<group>"; };
 		3DA73E432913E81800F3D3FC /* PokeChallenge01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeChallenge01UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
+		3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			children = (
 				3DA73E202913E81700F3D3FC /* AppDelegate.swift */,
 				3DA73E222913E81700F3D3FC /* SceneDelegate.swift */,
+				3DA73E512913FAC800F3D3FC /* View */,
 				3DA73E502913F5D400F3D3FC /* ViewController */,
 				3DA73E292913E81700F3D3FC /* Assets.xcassets */,
 				3DA73E2B2913E81700F3D3FC /* LaunchScreen.storyboard */,
@@ -133,6 +138,15 @@
 				3DA73E262913E81700F3D3FC /* PokeListViewController.storyboard */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3DA73E512913FAC800F3D3FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */,
+				3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,7 @@
 			files = (
 				3DA73E2D2913E81700F3D3FC /* LaunchScreen.storyboard in Resources */,
 				3DA73E2A2913E81700F3D3FC /* Assets.xcassets in Resources */,
+				3DA73E552913FB1B00F3D3FC /* DummyTableViewCell.xib in Resources */,
 				3DA73E282913E81700F3D3FC /* PokeListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +283,7 @@
 			files = (
 				3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */,
 				3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */,
+				3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */,
 				3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
