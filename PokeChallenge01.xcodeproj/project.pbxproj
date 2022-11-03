@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24EC2914059B0007726B /* UITableView+Extension.swift */; };
+		3D5B24F02914148E0007726B /* PokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24EF2914148E0007726B /* PokeListModel.swift */; };
 		3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E202913E81700F3D3FC /* AppDelegate.swift */; };
 		3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E222913E81700F3D3FC /* SceneDelegate.swift */; };
 		3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E242913E81700F3D3FC /* PokeListViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		3D5B24EC2914059B0007726B /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3D5B24EF2914148E0007726B /* PokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListModel.swift; sourceTree = "<group>"; };
 		3DA73E1D2913E81700F3D3FC /* PokeChallenge01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeChallenge01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA73E202913E81700F3D3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA73E222913E81700F3D3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5B24EE291414610007726B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D5B24EF2914148E0007726B /* PokeListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3DA73E142913E81700F3D3FC = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 				3DA73E222913E81700F3D3FC /* SceneDelegate.swift */,
 				3DA73E512913FAC800F3D3FC /* View */,
 				3DA73E502913F5D400F3D3FC /* ViewController */,
+				3D5B24EE291414610007726B /* Model */,
 				3DA73E292913E81700F3D3FC /* Assets.xcassets */,
 				3DA73E2B2913E81700F3D3FC /* LaunchScreen.storyboard */,
 				3DA73E2E2913E81700F3D3FC /* Info.plist */,
@@ -294,6 +305,7 @@
 			files = (
 				3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */,
 				3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */,
+				3D5B24F02914148E0007726B /* PokeListModel.swift in Sources */,
 				3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */,
 				3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */,
 				3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */,
