@@ -8,8 +8,8 @@
 import UIKit
 
 final class PokeListViewController: UIViewController {
-
-    private let dummyData = ["Swift", "RxSwift", "MVVM", "Flux", "SwiftUI", "Flutter"]
+    
+    private let model = PokeListModel()
 
     @IBOutlet private var tableview: UITableView! {
         didSet {
@@ -34,12 +34,12 @@ extension PokeListViewController: UITableViewDelegate {
 // MARK: UITableViewDataSource
 extension PokeListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        dummyData.count
+        model.dummyData().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(DummyTableViewCell.self, for: indexPath)
-        cell.configure(title: dummyData[indexPath.row])
+        cell.configure(title: model.dummyData()[indexPath.row])
         return cell
     }
 }
