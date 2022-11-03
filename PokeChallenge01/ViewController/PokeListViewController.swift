@@ -15,7 +15,7 @@ final class PokeListViewController: UIViewController {
         didSet {
             tableview.delegate = self
             tableview.dataSource = self
-            tableview.register(UINib(nibName: "DummyTableViewCell", bundle: .main), forCellReuseIdentifier: "DummyTableViewCell")
+            tableview.register(DummyTableViewCell.self)
         }
     }
 
@@ -38,7 +38,7 @@ extension PokeListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DummyTableViewCell", for: indexPath) as! DummyTableViewCell
+        let cell = tableView.dequeueReusableCell(DummyTableViewCell.self, for: indexPath)
         cell.configure(title: dummyData[indexPath.row])
         return cell
     }
