@@ -11,6 +11,7 @@
 		3D5B24F02914148E0007726B /* PokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24EF2914148E0007726B /* PokeListModel.swift */; };
 		3D5B24F5291428FA0007726B /* pokeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B24F4291428FA0007726B /* pokeData.json */; };
 		3D5B25002914FB030007726B /* PokeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24FF2914FB030007726B /* PokeEntity.swift */; };
+		3D5B25022914FD3D0007726B /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B25012914FD3D0007726B /* URLSession+Extension.swift */; };
 		3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E202913E81700F3D3FC /* AppDelegate.swift */; };
 		3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E222913E81700F3D3FC /* SceneDelegate.swift */; };
 		3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E242913E81700F3D3FC /* PokeListViewController.swift */; };
@@ -46,6 +47,7 @@
 		3D5B24EF2914148E0007726B /* PokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListModel.swift; sourceTree = "<group>"; };
 		3D5B24F4291428FA0007726B /* pokeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pokeData.json; path = PokeChallenge01/pokeData.json; sourceTree = SOURCE_ROOT; };
 		3D5B24FF2914FB030007726B /* PokeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeEntity.swift; sourceTree = "<group>"; };
+		3D5B25012914FD3D0007726B /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		3DA73E1D2913E81700F3D3FC /* PokeChallenge01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeChallenge01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA73E202913E81700F3D3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA73E222913E81700F3D3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 				3DA73E222913E81700F3D3FC /* SceneDelegate.swift */,
 				3DA73E292913E81700F3D3FC /* Assets.xcassets */,
 				3DA73E2B2913E81700F3D3FC /* LaunchScreen.storyboard */,
-				3DA73E2E2913E81700F3D3FC /* Info.plist */,
 				3D5B24F4291428FA0007726B /* pokeData.json */,
 			);
 			path = Resource;
@@ -146,6 +147,7 @@
 				3D5B24EE291414610007726B /* Model */,
 				3D5B24FE2914FAF10007726B /* Entity */,
 				3D5B24F3291428C30007726B /* Resource */,
+				3DA73E2E2913E81700F3D3FC /* Info.plist */,
 			);
 			path = PokeChallenge01;
 			sourceTree = "<group>";
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				3D5B24EC2914059B0007726B /* UITableView+Extension.swift */,
+				3D5B25012914FD3D0007726B /* URLSession+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */,
 				3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */,
 				3D5B24F02914148E0007726B /* PokeListModel.swift in Sources */,
+				3D5B25022914FD3D0007726B /* URLSession+Extension.swift in Sources */,
 				3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */,
 				3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */,
 				3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */,
