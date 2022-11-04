@@ -1,27 +1,38 @@
-# hidden/temp files
+# Xcode
+## Mac OS X
 .DS_Store
-*.swp
-*~.nib
-*.bk
-temp.plist
-
-# Build dir
+## Xcode build files
 build/
-
-# Xcode project files except for the project file
-# *.xcodeproj/*
-# !*.xcodeproj/project.pbxproj
-# !*.xcodeproj/xcshareddata
-xcuserdata
-xcuserstate
-
-# Windows image thumbnail file
-Thumbs.db
-
-# User-specific project settings
+DerivedData/
+## Xcode settings
+*.pbxuser
 *.mode1v3
 *.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3*.xcodeproj/*
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+## Xcode Patch
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+## library
+Pods/*
+Carthage/Build/
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.swp
+xcuserdata/
+*.moved-aside
+!.gitkeep
 
 vendor/bundle
-*.generated.swift
-/Pods/
