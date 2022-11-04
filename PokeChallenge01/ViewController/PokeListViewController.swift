@@ -21,6 +21,18 @@ final class PokeListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        model.delegate = self
+        model.fetchPokemonData()
+    }
+}
+
+// MARK: PokelListModelDelegate
+extension PokeListViewController:  PokeListModelDelegate {
+    func fetchPokemonDataSuccess() {
+        tableview.reloadData()
+    }
+    func fetchPokemonDataFailure(error: PokeAPIError) {
+        //TODO: アラートを出す
     }
 }
 
@@ -34,12 +46,12 @@ extension PokeListViewController: UITableViewDelegate {
 // MARK: UITableViewDataSource
 extension PokeListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        model.dummyData().count
+        model.pokemons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(DummyTableViewCell.self, for: indexPath)
-        cell.configure(title: model.dummyData()[indexPath.row])
+        cell.configure(pokemon: model.pokemons[indexPath.row])
         return cell
     }
 }

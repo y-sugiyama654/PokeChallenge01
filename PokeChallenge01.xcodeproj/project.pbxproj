@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D39FC562915064300407530 /* PokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39FC552915064300407530 /* PokeRepository.swift */; };
 		3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24EC2914059B0007726B /* UITableView+Extension.swift */; };
 		3D5B24F02914148E0007726B /* PokeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B24EF2914148E0007726B /* PokeListModel.swift */; };
 		3D5B24F5291428FA0007726B /* pokeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B24F4291428FA0007726B /* pokeData.json */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D39FC552915064300407530 /* PokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeRepository.swift; sourceTree = "<group>"; };
 		3D5B24EC2914059B0007726B /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3D5B24EF2914148E0007726B /* PokeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListModel.swift; sourceTree = "<group>"; };
 		3D5B24F4291428FA0007726B /* pokeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pokeData.json; path = PokeChallenge01/pokeData.json; sourceTree = SOURCE_ROOT; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D39FC542915063600407530 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3D39FC552915064300407530 /* PokeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		3D5B24EE291414610007726B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 				3DA73E512913FAC800F3D3FC /* View */,
 				3DA73E502913F5D400F3D3FC /* ViewController */,
 				3D5B24EE291414610007726B /* Model */,
+				3D39FC542915063600407530 /* Repository */,
 				3D5B24FE2914FAF10007726B /* Entity */,
 				3D5B24F3291428C30007726B /* Resource */,
 				3DA73E2E2913E81700F3D3FC /* Info.plist */,
@@ -335,6 +346,7 @@
 				3D5B24F02914148E0007726B /* PokeListModel.swift in Sources */,
 				3D5B25022914FD3D0007726B /* URLSession+Extension.swift in Sources */,
 				3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */,
+				3D39FC562915064300407530 /* PokeRepository.swift in Sources */,
 				3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */,
 				3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */,
 			);

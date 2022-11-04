@@ -11,7 +11,7 @@ final class DummyTableViewCell: UITableViewCell {
 
     @IBOutlet private var titleLabel: UILabel!
     
-    func configure(title: String) {
-        titleLabel.text = title
+    func configure(pokemon: Pokemon) {
+        titleLabel.text = pokemon.name.japanese
     }
 }
