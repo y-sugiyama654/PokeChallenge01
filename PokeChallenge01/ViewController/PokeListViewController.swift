@@ -31,7 +31,7 @@ extension PokeListViewController:  PokeListModelDelegate {
     func fetchPokemonDataSuccess() {
         tableview.reloadData()
     }
-    func fetchPokemonDataFailure(error: PokeAPIError) {
+    func fetchPokemonDataFailure(error: PokeAPIError?) {
         //TODO: アラートを出す
     }
 }
