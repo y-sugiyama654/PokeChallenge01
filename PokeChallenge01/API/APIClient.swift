@@ -26,7 +26,7 @@ struct PokeAPI {
 }
 
 final class APIClient {
-    func request<Request: RequestType>(request: Request, _ completion: @escaping (Result<Request.Response, Error>) -> Void) {
+    func request<Request: RequestType>(request: Request, _ completion: @escaping (Result<Request.Response, PokeAPIError>) -> Void) {
         
         URLSession.shared.dataTask(with: URL(string: request.path)!, handler: { data, response, error in
             
@@ -43,7 +43,7 @@ final class APIClient {
                 let response = try JSONDecoder().decode(Request.Response.self, from: jsonData)
                 completion(.success(response))
             } catch {
-                completion(.failure(error))
+                completion(.failure(error as! PokeAPIError))
                 print("decodeError: \(error)")
             }
         })
