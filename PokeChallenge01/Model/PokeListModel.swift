@@ -23,7 +23,7 @@ final class PokeListModel {
                 self?.pokemons = pokemons
                 self?.delegate?.fetchPokemonDataSuccess()
             case let .failure(error):
-                self?.delegate?.fetchPokemonDataFailure(error: error as? PokeAPIError)
+                self?.delegate?.fetchPokemonDataFailure(error: error)
             }
         }
     }

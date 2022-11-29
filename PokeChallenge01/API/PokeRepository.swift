@@ -9,7 +9,7 @@ import Foundation
 
 final class PokeRepository {
     let apiClient = APIClient()
-    func fetchPokemon(_ completion: @escaping (Result<[Pokemon], Error>) -> Void) {
+    func fetchPokemon(_ completion: @escaping (Result<[Pokemon], PokeAPIError>) -> Void) {
         let request = PokeAPI.FetchPokemonsRequest(limit: 800)
         apiClient.request(request: request, completion)
     }
