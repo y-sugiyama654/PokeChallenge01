@@ -17,8 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="239" height="123"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-dD-6eW">
-                        <rect key="frame" x="20.000000000000007" y="7.9999999999999982" width="96.666666666666686" height="20.333333333333329"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-dD-6eW">
+                        <rect key="frame" x="20.000000000000007" y="7.9999999999999982" width="103.66666666666669" height="20.333333333333329"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNh-zR-Bqx">
                                 <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="20.333333333333332"/>
@@ -27,15 +27,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwf-pK-39p">
-                                <rect key="frame" x="52.333333333333329" y="0.0" width="44.333333333333329" height="20.333333333333332"/>
+                                <rect key="frame" x="59.333333333333329" y="0.0" width="44.333333333333329" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="uwf-pK-39p" firstAttribute="leading" secondItem="MNh-zR-Bqx" secondAttribute="trailing" constant="8" id="s2f-XX-hqJ"/>
-                        </constraints>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-6x-M8M">
                         <rect key="frame" x="20" y="33.333333333333343" width="178.66666666666666" height="80"/>
@@ -47,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="80" id="gpH-II-qeJ"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="m8Y-3x-4hQ">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m8Y-3x-4hQ">
                                 <rect key="frame" x="88" y="0.0" width="41.333333333333343" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-0T-D2v">
@@ -69,12 +66,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Jq8-3k-w2x" firstAttribute="top" secondItem="4dQ-1k-hwi" secondAttribute="bottom" constant="8" id="kcw-UR-hIG"/>
-                                    <constraint firstItem="4dQ-1k-hwi" firstAttribute="top" secondItem="qxc-0T-D2v" secondAttribute="bottom" constant="8" id="wmf-Cu-x2i"/>
-                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-Ew-jZk">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-Ew-jZk">
                                 <rect key="frame" x="137.33333333333334" y="0.0" width="41.333333333333343" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-DS-vt6">
@@ -96,10 +89,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="bb1-s4-w4o" firstAttribute="top" secondItem="4zv-sv-3jq" secondAttribute="bottom" constant="8" id="BjU-2V-mGN"/>
-                                    <constraint firstItem="4zv-sv-3jq" firstAttribute="top" secondItem="hU9-DS-vt6" secondAttribute="bottom" constant="8" id="QsI-CT-FN4"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <constraints>

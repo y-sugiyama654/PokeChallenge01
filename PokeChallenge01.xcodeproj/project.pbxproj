@@ -25,6 +25,8 @@
 		3DA73E442913E81800F3D3FC /* PokeChallenge01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E432913E81800F3D3FC /* PokeChallenge01UITestsLaunchTests.swift */; };
 		3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */; };
 		3DA73E552913FB1B00F3D3FC /* DummyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */; };
+		D65D2733293CD203007AB3F8 /* PokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D2732293CD203007AB3F8 /* PokeTableViewCell.swift */; };
+		D65D2735293CD20C007AB3F8 /* PokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65D2734293CD20C007AB3F8 /* PokeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		3DA73E432913E81800F3D3FC /* PokeChallenge01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeChallenge01UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
 		3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyTableViewCell.xib; sourceTree = "<group>"; };
+		D65D2732293CD203007AB3F8 /* PokeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeTableViewCell.swift; sourceTree = "<group>"; };
+		D65D2734293CD20C007AB3F8 /* PokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 		3DA73E512913FAC800F3D3FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D65D2732293CD203007AB3F8 /* PokeTableViewCell.swift */,
+				D65D2734293CD20C007AB3F8 /* PokeTableViewCell.xib */,
 				3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */,
 				3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */,
 			);
@@ -314,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65D2735293CD20C007AB3F8 /* PokeTableViewCell.xib in Resources */,
 				3DA73E2D2913E81700F3D3FC /* LaunchScreen.storyboard in Resources */,
 				3DA73E2A2913E81700F3D3FC /* Assets.xcassets in Resources */,
 				3DA73E552913FB1B00F3D3FC /* DummyTableViewCell.xib in Resources */,
@@ -352,6 +359,7 @@
 				3D5B24ED2914059B0007726B /* UITableView+Extension.swift in Sources */,
 				3D39FC562915064300407530 /* PokeRepository.swift in Sources */,
 				3DA73E542913FB1B00F3D3FC /* DummyTableViewCell.swift in Sources */,
+				D65D2733293CD203007AB3F8 /* PokeTableViewCell.swift in Sources */,
 				3DA73E232913E81700F3D3FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
