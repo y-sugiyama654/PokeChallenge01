@@ -10,4 +10,5 @@ import Foundation
 enum PokeAPIError: Error {
     case notFoundJson
     case statusError(code: Int)
+    case decodeError
 }

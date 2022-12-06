@@ -43,7 +43,7 @@ final class APIClient {
                 let response = try JSONDecoder().decode(Request.Response.self, from: jsonData)
                 completion(.success(response))
             } catch {
-                completion(.failure(error as! PokeAPIError))
+                completion(.failure(PokeAPIError.decodeError))
                 print("decodeError: \(error)")
             }
         })
