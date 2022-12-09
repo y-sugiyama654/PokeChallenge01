@@ -23,6 +23,11 @@ final class PokeListViewController: UIViewController {
         super.viewDidLoad()
         model.delegate = self
         model.fetchPokemonData()
+        
+        let errorPopView = ErrorPopView()
+        errorPopView.frame = view.frame
+        view.addSubview(errorPopView)
+        errorPopView.show()
     }
 }
 
