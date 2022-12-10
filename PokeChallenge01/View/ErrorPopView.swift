@@ -41,7 +41,9 @@ final class ErrorPopView: UIView {
     
     @IBAction func retry(_ sender: UIButton) {
         // タップボタン押下時の処理
+        print("DEBUG: retryがタップされました")
         delegate?.retryFetchData()
+        view.removeFromSuperview()
     }
     
 }
