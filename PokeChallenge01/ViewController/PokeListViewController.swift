@@ -20,14 +20,25 @@ final class PokeListViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        print("start")
         super.viewDidLoad()
         model.delegate = self
         model.fetchPokemonData()
         
         let errorPopView = ErrorPopView()
+        // ErrorPopViewのdelegateプロパティにPokeListViewControllerを代入
+        errorPopView.delegate = self
         errorPopView.frame = view.frame
         view.addSubview(errorPopView)
         errorPopView.show()
+    }
+    
+}
+
+extension PokeListViewController:  ErrorPopViewDelegate {
+    func retryFetchData() {
+        // retryタップ時にデータの再取得を実行
+        model.fetchPokemonData()
     }
 }
 

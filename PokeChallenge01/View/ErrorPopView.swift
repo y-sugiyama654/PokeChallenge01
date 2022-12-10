@@ -7,12 +7,18 @@
 
 import UIKit
 
+// protocolに通知したいメソッドを定義
+protocol ErrorPopViewDelegate: AnyObject {
+    func retryFetchData()
+}
+
 final class ErrorPopView: UIView {
+    
+    // protocolをプロパティとして宣言
+    weak var delegate: ErrorPopViewDelegate?
     
     private lazy var view = UINib(nibName: String(describing: ErrorPopView.self), bundle: nil)
         .instantiate(withOwner: self, options: nil).first as! UIView
-    
-    private let model = PokeListModel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,14 +35,13 @@ final class ErrorPopView: UIView {
     }
 
     @IBAction func close(_ sender: UIButton) {
+        // クローズボタン押下時の処理
         view.removeFromSuperview()
     }
     
     @IBAction func retry(_ sender: UIButton) {
-        // 「Retry」ボタン押下後にmodel.fetchPokemonData()を呼び出して
-        // データの再取得を行いたい。
-        model.fetchPokemonData()
+        // タップボタン押下時の処理
+        delegate?.retryFetchData()
     }
     
-
 }
