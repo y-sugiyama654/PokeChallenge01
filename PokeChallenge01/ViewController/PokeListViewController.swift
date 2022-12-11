@@ -29,7 +29,6 @@ final class PokeListViewController: UIViewController {
 extension PokeListViewController:  ErrorPopViewDelegate {
     func retryFetchData() {
         // retryタップ時にデータの再取得を実行
-        print("DEBUG: fetchPokemonDataの再取得")
         model.fetchPokemonData()
     }
 }
@@ -40,7 +39,7 @@ extension PokeListViewController:  PokeListModelDelegate {
         tableview.reloadData()
     }
     func fetchPokemonDataFailure(error: PokeAPIError?) {
-        // エラーポップ表示処理
+        // エラー時の処理(エラーポップを表示)
         let errorPopView = ErrorPopView()
         errorPopView.delegate = self
         errorPopView.frame = view.frame
