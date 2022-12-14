@@ -26,13 +26,25 @@ final class PokeListViewController: UIViewController {
     }
 }
 
+extension PokeListViewController:  ErrorPopViewDelegate {
+    func retryFetchData() {
+        // retryタップ時にデータの再取得を実行
+        model.fetchPokemonData()
+    }
+}
+
 // MARK: PokelListModelDelegate
 extension PokeListViewController:  PokeListModelDelegate {
     func fetchPokemonDataSuccess() {
         tableview.reloadData()
     }
     func fetchPokemonDataFailure(error: PokeAPIError?) {
-        //TODO: アラートを出す
+        // エラー時の処理(エラーポップを表示)
+        let errorPopView = ErrorPopView()
+        errorPopView.delegate = self
+        errorPopView.frame = view.frame
+        view.addSubview(errorPopView)
+        errorPopView.show()
     }
 }
 

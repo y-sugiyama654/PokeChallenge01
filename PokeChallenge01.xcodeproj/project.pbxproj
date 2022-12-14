@@ -28,6 +28,8 @@
 		3DA73E552913FB1B00F3D3FC /* DummyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */; };
 		D65D2733293CD203007AB3F8 /* PokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D2732293CD203007AB3F8 /* PokeTableViewCell.swift */; };
 		D65D2735293CD20C007AB3F8 /* PokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65D2734293CD20C007AB3F8 /* PokeTableViewCell.xib */; };
+		D65D273D293F779F007AB3F8 /* ErrorPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65D273C293F779F007AB3F8 /* ErrorPopView.xib */; };
+		D65D273F293F77DF007AB3F8 /* ErrorPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D273E293F77DF007AB3F8 /* ErrorPopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyTableViewCell.xib; sourceTree = "<group>"; };
 		D65D2732293CD203007AB3F8 /* PokeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeTableViewCell.swift; sourceTree = "<group>"; };
 		D65D2734293CD20C007AB3F8 /* PokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeTableViewCell.xib; sourceTree = "<group>"; };
+		D65D273C293F779F007AB3F8 /* ErrorPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorPopView.xib; sourceTree = "<group>"; };
+		D65D273E293F77DF007AB3F8 /* ErrorPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,8 @@
 			children = (
 				D65D2732293CD203007AB3F8 /* PokeTableViewCell.swift */,
 				D65D2734293CD20C007AB3F8 /* PokeTableViewCell.xib */,
+				D65D273C293F779F007AB3F8 /* ErrorPopView.xib */,
+				D65D273E293F77DF007AB3F8 /* ErrorPopView.swift */,
 				3DA73E522913FB1B00F3D3FC /* DummyTableViewCell.swift */,
 				3DA73E532913FB1B00F3D3FC /* DummyTableViewCell.xib */,
 			);
@@ -325,6 +331,7 @@
 			files = (
 				D65D2735293CD20C007AB3F8 /* PokeTableViewCell.xib in Resources */,
 				3DA73E2D2913E81700F3D3FC /* LaunchScreen.storyboard in Resources */,
+				D65D273D293F779F007AB3F8 /* ErrorPopView.xib in Resources */,
 				3DA73E2A2913E81700F3D3FC /* Assets.xcassets in Resources */,
 				3DA73E552913FB1B00F3D3FC /* DummyTableViewCell.xib in Resources */,
 				3D5B24F5291428FA0007726B /* pokeData.json in Resources */,
@@ -355,6 +362,7 @@
 			files = (
 				3D5B25002914FB030007726B /* PokeEntity.swift in Sources */,
 				3DA73E252913E81700F3D3FC /* PokeListViewController.swift in Sources */,
+				D65D273F293F77DF007AB3F8 /* ErrorPopView.swift in Sources */,
 				3DA73E212913E81700F3D3FC /* AppDelegate.swift in Sources */,
 				3D50EF8629288F4900C6C19F /* Error.swift in Sources */,
 				3D39FC60291BE48100407530 /* APIClient.swift in Sources */,
