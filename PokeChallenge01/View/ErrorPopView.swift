@@ -34,12 +34,12 @@ final class ErrorPopView: UIView {
         addSubview(view)
     }
 
-    @IBAction func close(_ sender: UIButton) {
+    @IBAction private func close(_ sender: UIButton) {
         // クローズボタン押下時の処理
         removeFromSuperview()
     }
     
-    @IBAction func retry(_ sender: UIButton) {
+    @IBAction private func retry(_ sender: UIButton) {
         // タップボタン押下時の処理
         delegate?.retryFetchData()
         removeFromSuperview()
