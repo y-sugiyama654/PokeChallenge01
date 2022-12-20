@@ -9,7 +9,7 @@ import UIKit
 
 final class PokeTableViewCell: UITableViewCell {
     
-    let imageUrl: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+    private let imageUrl: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
     
     @IBOutlet private var numberLabel: UILabel!
     @IBOutlet private var titleLabel: UILabel!
