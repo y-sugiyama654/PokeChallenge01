@@ -121,7 +121,7 @@
                 <outlet property="defenseLabel" destination="Jq8-3k-w2x" id="AHp-kc-IE5"/>
                 <outlet property="hpLabel" destination="qxc-0T-D2v" id="LKL-HQ-qZC"/>
                 <outlet property="numberLabel" destination="MNh-zR-Bqx" id="0X7-nr-rth"/>
-                <outlet property="pokeView" destination="Hyo-1O-Hla" id="6tq-HU-xDB"/>
+                <outlet property="pokemonImage" destination="Hyo-1O-Hla" id="od3-3Y-bs6"/>
                 <outlet property="specialAttackLabel" destination="hU9-DS-vt6" id="oqL-Jf-VEr"/>
                 <outlet property="specialDefenseLabel" destination="4zv-sv-3jq" id="LRQ-9S-5RD"/>
                 <outlet property="speedLabel" destination="bb1-s4-w4o" id="bQp-52-lBp"/>
